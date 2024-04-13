@@ -119,7 +119,6 @@ void *receive_packet(void *arg) {
 
             if (received_packet.variable_header[1] == 0x00) {
                 printf("Connected to MQTT broker\n");
-                break;
             }
         } else if (received_packet.fixed_header == MQTT_FIXED_HEADER_SUBACK) {
             received_packet.variable_header = malloc(2);
