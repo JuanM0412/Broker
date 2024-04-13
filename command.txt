@@ -1,3 +1,4 @@
-gcc -o bin/server src/server.c src/queue.c src/send_packets_to_client.c src/tree.c src/decode.c src/encode.c src/packet.c src/handle_tree.c -lpthread
-./bin/server 172.31.84.211 1833 a
-gcc -o bin/client src/client.c src/decode.c src/encode.c src/packet.c src/send_packets_to_server.c -lpthread
+gcc -o bin/server src/server.c src/queue.c src/send_packets_to_client.c src/tree.c src/decode.c src/encode.c src/packet.c src/handle_tree.c src/utils.c -lpthread
+./bin/server PrivateIP 1833 a
+gcc -o bin/client src/client.c src/decode.c src/encode.c src/packet.c src/send_packets_to_server.c src/utils.c -lpthread
+./bin/client PublicIP 1833 a
