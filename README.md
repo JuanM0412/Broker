@@ -59,5 +59,14 @@ Finally, another aspect that was not developed was the unsubscribe message type.
 
 ## Changes
 
-### send_packets_to_server
+### send_packets_to_server.c
 ![send_packets_to_server](img/send_packets_to_server.png)
+
+### server.c
+![server(1)](img/server(1).png)
+![server(2)](img/server(2).png)
+![server(3)](img/server(3).png)
+![server(4)](img/server(4).png)
+
+### client.c
+![client](img/client.png)
